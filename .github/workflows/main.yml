@@ -21,7 +21,7 @@ jobs:
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH
+      run: .\ngrok\ngrok.exe authtoken 2Yc5LaJtaTK3lHTFTb5QPA2fmw7_5wUyhs4kNy2Pq2abUP6FQ
       env:
         NGROK_AUTH: ${{ github.event.inputs.increment }}
     - name: Windows10 RDP.
